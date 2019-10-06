@@ -10,6 +10,9 @@
       <Home/>
     </v-content>
 
+    <v-footer app>
+      FOOTET
+    </v-footer>
   </v-app>
 </template>
 
