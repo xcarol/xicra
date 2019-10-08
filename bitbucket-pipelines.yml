@@ -1,9 +1,0 @@
-image: cschlosser/alpine-lftps
-pipelines:
-  branches:
-    master:
-      - step:
-          deployment: production
-          script:
-            - echo "lftp -d -e 'mirror --reverse . $FTP_TARGET_PATH' -u $FTP_USERNAME,$FTP_PASSWORD $FTP_TARGET_SITE"
-            - lftp -d -e "mirror --reverse . $FTP_TARGET_PATH" -u $FTP_USERNAME,$FTP_PASSWORD $FTP_TARGET_SITE
