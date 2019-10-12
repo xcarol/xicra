@@ -45,10 +45,5 @@
       "vue-cli-service lint",
       "git add"
     ]
-  },
-  "engines": {
-    "npm": "^6.5",
-    "node": "^11.6",
-    "yarn": "^1.12"
   }
 }
